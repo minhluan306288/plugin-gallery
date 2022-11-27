@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brandcate_dls_1_0_0</title>
+
+    <link rel="stylesheet" href="./assets/lib.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <style>
+        body {
+            background: #000
+        }
+        @keyframes apear {
+            from{
+                opacity: 0;
+                filter: blur(10px);
+                transform: scale(.85);
+            }
+            to{
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+            }
+        }
+        .brandcate_dls_1_0_0__item{
+            animation: apear 1000ms cubic-bezier(0.46, -0.01, 0.22, 1);
+            transform-origin: top;
+        }
+    
+    </style>
+    <!-- <script src="./assets/js/gallery.js" type="module">  </script> -->
+</head>
+<script>
+
+</script>
+
+<body>
+    <div class="main_dls_1_0_0">
+        <section class="brandcate_dls_1_0_0 ">
+            <div class="container">
+
+                <ul id="menu-filter" class="brandcate_dls_1_0_0__nav" ></ul>
+                <div id="gallery" class="brandcate_dls_1_0_0__content" ></div>          
+
+                <script type="module">
+                    import createGallery from './assets/js/gallery.js';
+                    import {menuItems, galleryItems} from './assets/contants/index.js';
+                    createGallery('menu-filter',menuItems,'gallery', galleryItems);
+                </script>
+                
+            </div>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
